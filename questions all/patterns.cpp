@@ -404,20 +404,290 @@ int main(){
 
 // there are n rows and cols = rows the formula of digit is A +n -row + col - 1
 
-int n ;
-cin >> n;
-int row = 1 ;
+// int n ;
+// cin >> n;
+// int row = 1 ;
 
-while(row <= n){
-    int col = 1 ;
-    while(col <= row){
-        char ch = 'A' + n + col - row -1;
-        cout << ch;
-        col++; 
+// while(row <= n){
+//     int col = 1 ;
+//     while(col <= row){
+//         char ch = 'A' + n + col - row -1;
+//         cout << ch;
+//         col++; 
+//     }
+
+//     cout << endl;
+//     row++;
+// }
+
+// ABC 
+// BCD 
+// CDE 
+ 
+// there rows = n and cols = n  and the formulae is  'A' + row + col -2 
+
+// int n ;
+// cout << "Please enter a number" << endl;
+// cin >> n;
+// int row = 1 ;
+
+// while (row <= n){
+//     int col = 1 ;
+//     while(col <= n){
+//      char ch = 'A' + row + col -2 ;
+//      cout << ch;
+//      col++;
+//     }
+//     cout << endl;
+//     row++;
+// }
+
+//     *
+//    **
+//   ***
+//  ****
+// *****
+
+// here there are space in left hand side that we ahve to print 
+// so there are n - row spaces , and rows = n 
+// col = rows ; 
+
+// int n;
+// cout << "Please enter a number" << endl;
+// cin >> n;
+// int row = 1;
+
+// while(row <= n){
+//     int space = n - row;
+//     while(space){
+//         cout << ' ';
+//         space--;
+//     }
+//     int col =1;
+//     while(col <= row){
+//         cout << '*';
+//         col++;
+//     }
+
+//     cout << endl;
+//     row++;
+
+
+// }
+
+
+// ******
+// ***** 
+// ****
+// ***
+// **
+// *
+
+// here there n = rows  and cols =  + rows - 1
+
+// int n ;
+// cout << "Please enter a number" << endl;
+// cin >> n;
+// int row = 1;
+// while(row <= n){
+//     int cols = 1 ;
+//     while(cols<=n - row + 1)
+//     {   
+//         cout << '*';
+//         cols++;
+//     }
+
+//     cout << endl;
+//     row++;
+// }
+
+
+
+// *****
+//  ****
+//   ***
+//    **
+//     *
+
+// here there are rows = n and cols = n - rows + 1 
+// but there is also space which is equal to rows - 1
+
+// int n ;
+// cout << "Please enter a number" << endl;
+// cin >> n;
+// int row = 1;
+
+// while(row <= n){
+//     int space = row - 1;
+//     while(space){
+//         cout << ' ' ;
+//         space--;
+//     }
+
+//     int col = 1 ;
+//     while(col <=n-row+1){
+//         cout << '*';
+//         col++;
+//     }
+
+//     cout << endl;
+//     row++;
+
+// }
+
+
+// 1111
+//  222
+//   33
+//    4
+
+// there are rows = n and cols = n-rows + 1 and space = row - 1
+
+// int n ;
+// cout << "Please enter a number" << endl;
+// cin >> n;
+// int row = 1;
+
+// while(row <= n){
+//     int space = row - 1;
+//     while(space){
+//         cout  << ' ' ;
+//         space--;
+//     }
+
+//     int col = 1 ;
+//     while(col <= n - row + 1){
+//         cout << row;
+//         col++;
+//     }
+
+//     cout << endl;
+//     row++;
+// }
+
+//    1
+//   22 
+//  333
+// 4444
+
+// here rows = n and cols = rows and space = n- row
+
+// int n;
+// cout << "Please enter a number" << endl;
+// cin >> n;
+// int row = 1;
+
+// while(row <= n){
+//     int space = n- row ;
+//     while(space){
+//         cout << ' ';
+//         space--;
+//     }
+
+//     int col = 1 ;
+//     while(col <= row){
+//         cout << row;
+//         col++;
+//     }
+
+//     cout << endl;
+//     row++;
+// }
+
+// 1234
+//  234
+//   34
+//    4
+
+// here row = n and cols = n- rows - 1 space = rows - 1
+// digit = col + row -1
+
+// int n;
+// cout << "Please enter a digit" << endl;
+// cin >> n;
+// int row = 1;
+
+// while(row <= n){
+//     int space = row - 1 ;
+//     while(space){
+//         cout << ' ';
+//         space--;
+//     }
+// int cols = 1 ;
+// while(cols <= n-row+1){
+//     cout << cols+row-1;
+//     cols++;
+// }
+
+// cout << endl;
+// row++;
+
+// }
+
+//    1
+//   23
+//  456
+// 6789   
+
+// there rows = n ; cols = rows
+//  and space = n- row and digit = col + row - 1
+
+// int n;
+// cout << "Please enter a digit" << endl;
+// cin >> n;
+
+// int rows = 1 ; 
+// while(rows <= n){
+//     int space = n - rows ;
+//     while(space){
+//         cout << ' ';
+//         space--;
+//     }
+
+//     int cols = 1 ;
+//     while(cols <= rows){
+//         cout << cols + rows -1 ;
+//         cols++;
+//     }
+
+//     cout << endl;
+//     rows++;
+// }
+
+// ---1 ---
+// --12 1--
+// -123 21-
+// 1234 321
+
+// rows = n , cols = rows , digit = cols , space = n- rows
+
+int n;
+cout << "Please enter a digit" << endl;
+cin >> n;
+int rows = 1 ;
+while(rows <= n){
+    int space = n - rows ;
+    while(space){
+        cout << ' ' ;
+        space--;
     }
 
+    int cols = 1 ;
+    while(cols <= rows){
+        cout << cols;
+        cols++;
+    }
+
+    int cols2 = 1;
+    while(cols2 <= rows - 1){
+        cout << cols2 + rows -2 ;
+        cols2++;
+    }
+
+
     cout << endl;
-    row++;
+    rows++;
+
 }
 
 
